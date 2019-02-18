@@ -1,16 +1,11 @@
 <?php
-
     class db{
-
         //host
         private $host = 'localhost';
-
         //user
         private $user = 'root';
-
         //password
         private $password = '';
-
         //database
         private $database = 'db_nivelamento';
 
@@ -26,9 +21,8 @@
             if(mysqli_connect_error()){
                 echo 'Erro ao conectar com o banco de dados: '.mysqli_connect_error(); 
             }
-
+            
             return $con;
         }
     }
-
 ?>

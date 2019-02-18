@@ -20,17 +20,15 @@
 
 	<body>
 		<div class="container">
-			<form class="form-inline" action="" id="pesquisa-venda">
-				<div class="form-group mb-3">
+			<form method="post" class="form-inline" action ="registra_produto.php" id="cadastro-produto">
+				<div class="form-group">
 					<h2> Cliente </h2>
 				</div>
 				<div class="form-group mx-sm-3 mb-2">
-					<input class="form-control" placeholder="nome...">
+					<input class="form-control" name="cliente" placeholder="nome...">
 				</div>
-			</form><br>
-
-  			<div class="row">
-    			<div class="col-md-4">
+				<div class="row">
+    			<div class="col-mx-sm-3 mb-2">
 					<table class="table">
 						<tr class="info">
 							<th>Produto</th>
@@ -38,7 +36,6 @@
 						</tr>
 					</table>
 				</div>
-			<form method="post" action ="registra_produto.php" id="cadastro-produto">
 				<div class="form-inline">
 					<div class="form-group">
 					<h3> Produto </h3>
@@ -47,11 +44,13 @@
 	    		<div class="form-group">
 		    		<h3> Valor </h3>
 	        		<input class="form-control" type="number" name="valor" placeholder="00.00">
-					<button type="submit" class="btn btn-primary">Adicionar</button>
-        		</div>
-			</form><br>
-			<button type="submit" class="btn btn-default">Salvar</button>
-			<button type="submit" class="btn btn-warning">Cancelar</button>
+					<button type="button" class="btn btn-primary">Adicionar</button>
+        		</div><br><br>
+				<div class="">
+					<button type="submit" class="btn btn-success">Salvar</button>
+					<button type="reset" class="btn btn-danger">Cancelar</button>
+				</div>
+			</form>
 		</div>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</body>
